@@ -13,6 +13,9 @@ players in separate game sessions clicking the
 button, the click count will update accordingly
 for both of the players.
 
+You can check out the server code
+[here](https://github.com/trundler-dev/sbox-websocket-vertx).
+
 ### Why?
 Sometimes you want to save information between
 game sessions, or sync information across
