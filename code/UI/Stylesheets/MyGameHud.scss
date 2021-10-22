@@ -1,0 +1,9 @@
+﻿RootPanel {
+    background-color: rgba( #333, 0 );
+    transition: background-color 0.2s ease-in;
+    pointer-events: all;
+
+    &.devcamera {
+        display: none;
+    }
+}
