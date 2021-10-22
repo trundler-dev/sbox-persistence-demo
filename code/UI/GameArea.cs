@@ -18,7 +18,7 @@ namespace PersistenceDemo.UI
 			// Add the OnClick Listener to our ClickButton
 			ClickButton.AddEventListener( "onclick", () => {
 				// Sends an empty message to the WebSocket Server, incrementing the click count.
-				PersistenceDemoGame.webSocketExample.Send( "{}" );
+				PersistenceDemoGame.WebSocketExample.Send( "{}" );
 			} );
 		}
 
@@ -27,7 +27,7 @@ namespace PersistenceDemo.UI
 			base.Tick();
 
 			// On Tick, the click count on the UI is updated based on the last message recevied from the WS Server.
-			ClickCountLabel.SetText( "Clicks: " + PersistenceDemoGame.webSocketExample.LastMessage );
+			ClickCountLabel.SetText( "Clicks: " + PersistenceDemoGame.WebSocketExample.LastMessage );
 		}
 
 	}

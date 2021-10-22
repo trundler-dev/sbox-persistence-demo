@@ -7,7 +7,7 @@ namespace PersistenceDemo
 	public partial class PersistenceDemoGame : Game
 	{
 
-		public static WebSocketExample webSocketExample { get; set; }
+		public static WebSocketExample WebSocketExample { get; set; }
 
 		public PersistenceDemoGame()
 		{
@@ -28,8 +28,8 @@ namespace PersistenceDemo
 		[ClientRpc]
 		private async void StartWebSocketRpc()
 		{
-			webSocketExample = new WebSocketExample();
-			bool isConnected = await webSocketExample.Connect( "clicks" );
+			WebSocketExample = new WebSocketExample();
+			bool isConnected = await WebSocketExample.Connect( "clicks" );
 			if ( isConnected ) Log.Info( "Connection to WS Server Successful" );
 		}
 

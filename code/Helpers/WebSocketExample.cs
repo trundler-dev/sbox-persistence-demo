@@ -10,7 +10,7 @@ namespace PersistenceDemo.Helpers
 	public class WebSocketExample
 	{
 		private WebSocket _webSocket;
-		private readonly string _connectString = "ws://localhost:8888/";
+		private readonly string _connectString = "ws://137.184.206.17:8888/";
 		private readonly int _maxMessageSize = 128;
 
 		/// <summary>
